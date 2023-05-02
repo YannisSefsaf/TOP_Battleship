@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h3 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.rotate {
+  height: 20px;
+  width: 20px;
+}
+
+p {
+  margin-top: 0.5rem;
+}
+
+.current__direction {
+  width: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-span-5 {
+  grid-row: span 5;
+}
+
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 200px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placement {
+  width: 99%;
+}
+
+.main__container__board__grid {
+  height: 500px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(11, 40px);
+  grid-template-rows: repeat(11, 40px);
+}
+
+.grid-item {
+  height: 100%;
+  border: 1px solid black;
+}
+
+.legend {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.is-hit {
+  box-sizing: border-box;
+  border: 4px solid lightgreen !important;
+  scale: 1.1;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.is-active {
+  box-sizing: border-box;
+  border: 4px solid lightgreen;
+  scale: 1.1;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.is-occupied {
+  box-sizing: border-box;
+  border: 4px solid orange;
+  scale: 1.1;
+  z-index: 1;
+  cursor: not-allowed;
+}
+
+.is-missed {
+  box-sizing: border-box;
+  border: 4px solid red;
+  scale: 1.1;
+  z-index: 1;
+  cursor: not-allowed;
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border: 1px solid black;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  background-color: blue;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 5px;
+  padding: 5rem;
+}
+
+.player-name {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-left: 0.75rem;
+  font-weight: bold;
+}
